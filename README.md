@@ -12,6 +12,7 @@ Feel free to contribute to this project using our (contribution template!!!!!!!!
 
 - [System Preferenes](#system-preferences)
 - [Xcode](#xcode)
+- [Homebrew](#homebrew)
 
 # System Preferences
 
@@ -85,13 +86,129 @@ Optional but highly suggested changes:
 
 # Xcode
 
-Xcode is an integrated development environment for macOS containing a suite of software development tools developed by Apple for developing software for macOS, iOS, watchOS and tvOS.
+Xcode is an integrated development environment for macOS containing a suite of software development tools developed by Apple for developing software for macOS, iOS, watchOS, and tvOS.
 
 You can download it from the [App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) or from [Apple's website](https://developer.apple.com/xcode/).
 
-Most of the development tools rely on the Xcode command line tools:
+Most of the development tools rely on the Xcode command-line tools:
 
 ```bash
 # use this to install them
 xcode-select --install
+```
+
+# Homebrew
+
+Homebrew calls itself "The missing package manager for macOS" and is oftentimes used to install different apps as you do on Linux (i.e apt install .../ pacman -S ... )
+
+## Installation
+
+> Make sure to have [Xcode command line tools](#xcode) installed first.
+
+```bash
+sudo xcode-select --install
+```
+
+Then use the following script to install Homebrew
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+## Path
+
+To make the Homebrew-installed packages available to your shell, you need to add your Homebrew location to your `$PATH`.
+
+Use this command to add it to your bash profile (zsh, fish, or other shell guides are available on google)
+
+```bash
+echo 'PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+```
+
+Then to make sure it works, run
+
+```bash
+brew doctor
+```
+
+That's it!
+
+Install apps using
+
+```bash
+brew install <formula>
+```
+
+Update formulaes with
+
+```bash
+brew update
+```
+
+> Note: If that command fails you can manually download the directory of formulas like this:
+
+```bash
+cd /usr/local/Homebrew/
+git fetch origin
+git reset --hard origin/master
+```
+
+To see a list of outdated apps use:
+
+```bash
+brew outdated
+```
+
+Homebrew keeps older versions of formulas installed on your system, in case you want to roll back to an older version. That is rarely necessary, so you can do some cleanup to get rid of those old versions:
+
+```bash
+brew cleanup
+```
+
+If you want to see what formulae Homebrew would delete without actually deleting them, you can run:
+
+```bash
+brew cleanup --dry-run
+```
+
+To see what you have installed (with their version numbers):
+
+```bash
+brew list --versions
+```
+
+To search for formulas you run:
+
+```bash
+brew search <formula>
+```
+
+To get more information about a formula you run:
+
+```bash
+brew info <formula>
+```
+
+To uninstall a formula you can run:
+
+```bash
+brew uninstall <formula>
+```
+
+## Casks
+
+Homebrew-Cask extends Homebrew and allows you to install large binary files via a command-line tool. You can for example install applications like Google Chrome, Dropbox, VLC, and Spectacle. No more downloading .dmg files and dragging them to your Applications folder!
+
+### Search
+
+Search to see if your desired app is available as a Cask using:
+
+```bash
+brew search <package>
+```
+
+Here is an example:
+
+```bash
+brew install --cask docker
 ```
