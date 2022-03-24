@@ -214,7 +214,7 @@ Here is an example:
 brew install --cask docker
 ```
 
-Acknowledgements:
+Acknowledgments:
 Huge thanks to the [mac-setup](https://github.com/sb2nov/mac-setup) project which provided a lot of information in this guide.
 
 # Visual Studio Code
@@ -242,7 +242,7 @@ to open a new workspace on that folder.
 This is done by adding code to `$PATH`.
 
 1. Launch VS Code
-2. Open the Command Pallete(Cmd+Shift+P) and type `shell command` to find _Install 'code' command in PATH_
+2. Open the Command Pallete(Cmd+Shift+P) and type **`shell** command` to find _Install 'code' command in PATH_
 
 ## Keybindings
 
@@ -282,7 +282,7 @@ This is an essential step in becoming a better and faster coder. Here are the mo
     Helps you see the indentation level of your code. Super useful in long HTML divs.
     - [indent-rainbow - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
   - Live Server by Ritwick Dey |
-    Launches a local development server with live reload feature for static & dynamic pages.
+    Launches a local development server with a live reload feature for static & dynamic pages.
     - [Live Server - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
   - Eslint by Microsoft | Integrates ESLint into VS Code | [Eslint - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - GitLens by GitKraken | Supercharge Git within VS Code
