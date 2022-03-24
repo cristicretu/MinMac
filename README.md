@@ -1,0 +1,2 @@
+# MinMac
+Minimal MacOS Configuration
