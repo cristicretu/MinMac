@@ -13,6 +13,7 @@ Feel free to contribute to this project using our (contribution template!!!!!!!!
 - [System Preferenes](#system-preferences)
 - [Xcode](#xcode)
 - [Homebrew](#homebrew)
+- [Visual Studio Code](#visual-studio-code)
 
 # System Preferences
 
@@ -212,3 +213,81 @@ Here is an example:
 ```bash
 brew install --cask docker
 ```
+
+Acknowledgements:
+Huge thanks to the [mac-setup](https://github.com/sb2nov/mac-setup) project which provided a lot of information in this guide.
+
+# Visual Studio Code
+
+[Visual Studio Code](https://code.visualstudio.com/) is a lightweight but powerful text editor, capable of handling many programming languages like a full-fledged IDE.
+
+## Installation
+
+Install using brew:
+
+```bash
+brew install --cask visual-studio-code
+```
+
+## Launching from the command line
+
+It's super useful to navigate to a folder and just write
+
+```bash
+code .
+```
+
+to open a new workspace on that folder.
+
+This is done by adding code to `$PATH`.
+
+1. Launch VS Code
+2. Open the Command Pallete(Cmd+Shift+P) and type `shell command` to find _Install 'code' command in PATH_
+
+## Keybindings
+
+This is an essential step in becoming a better and faster coder. Here are the most useful ones:
+
+- Ctrl+P / Command + P : Displays the search bar to search for files
+  [ctrl+p.mp4](VS%20Code%20Ma%20af359/ctrlp.mp4)
+- Ctrl + B / Command + B : Toggle the sidebar
+- Ctrl + F / Command + F : Find words in code
+- Ctrl + J / Command + J : Shows terminal
+- Ctrl + Shift + M / Command + Shift + M : Quickly shows errors and warnings
+- Ctrl + Shift + L / Command + Shift + L : Multi cursor selection
+- Ctrl + D / Command + D : One by one selection
+- Ctrl + / or Command + / : Comments current line
+- Ctrl + Shift + I / Shift + Option + F : Formats the entire file
+- Alt + Up or Down / Option + Up or Down : Move line Up or Down
+- Ctrl + Space / Control + Space: Show Code Suggestions
+- Ctrl + G / Command + G : Go to a specific line
+- Ctrl + L / Command + L : Select current line
+  For more keybindings check the official documentation, those 👆, were the most useful ones.
+  ![https://code.visualstudio.com/assets/docs/getstarted/tips-and-tricks/KeyboardReferenceSheet.png](https://code.visualstudio.com/assets/docs/getstarted/tips-and-tricks/KeyboardReferenceSheet.png)
+
+## Extensions
+
+- This is where Visual Studio Code wins above all other editors, due to the number and usefulness of the extensions
+  - Here are some of the most useful:
+  - Import Cost by Wix |
+    For web developers - this shows the size of each imported package
+    - [Import Cost - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+  - Material Icon Theme by Philipp Kief |
+    Implements a lot of useful icons for your files.
+    - [Material Icon Theme - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+  - Prettier |
+    Prettier is an opinionated code formatter. It re-styles your code in a beautiful way.
+    - [Prettier - Code formatter - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - Indent Rainbow by oderwat |
+    Helps you see the indentation level of your code. Super useful in long HTML divs.
+    - [indent-rainbow - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+  - Live Server by Ritwick Dey |
+    Launches a local development server with live reload feature for static & dynamic pages.
+    - [Live Server - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+  - Eslint by Microsoft | Integrates ESLint into VS Code | [Eslint - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  - GitLens by GitKraken | Supercharge Git within VS Code
+    - [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+  - Python by Microsoft | Intelisense, Linting and more
+    - [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+  - Vim by vscodevim | Vim emulation for VS Code
+    - [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
