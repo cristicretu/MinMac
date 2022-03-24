@@ -6,11 +6,12 @@ The overall theme is **minimal** as _a clean computer offers clean thoughts_.
 
 ## Contributing
 
-Feel free to contribute to this project using our (contribution template)[].
+Feel free to contribute to this project using our (contribution template!!!!!!!!!)[].
 
-# Contents
+# Table of Contents
 
-- (System Preferenes)[#system-preferences]
+- [System Preferenes](#system-preferences)
+- [Xcode](#xcode)
 
 # System Preferences
 
@@ -81,3 +82,16 @@ Optional but highly suggested changes:
 - Point & Click
   - Enable Tap to click
   - Enable Secondary Click
+
+# Xcode
+
+Xcode is an integrated development environment for macOS containing a suite of software development tools developed by Apple for developing software for macOS, iOS, watchOS and tvOS.
+
+You can download it from the [App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) or from [Apple's website](https://developer.apple.com/xcode/).
+
+Most of the development tools rely on the Xcode command line tools:
+
+```bash
+# use this to install them
+xcode-select --install
+```
