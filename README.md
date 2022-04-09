@@ -6,7 +6,7 @@ The overall theme is **minimal** as _a clean computer offers clean thoughts_.
 
 ## Contributing
 
-Feel free to contribute to this project using our (contribution template!!!!!!!!!)[].
+Feel free to contribute to this project using our (contribution template!!!!!!!!)[].
 
 # Table of Contents
 
